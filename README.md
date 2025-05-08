@@ -1,33 +1,33 @@
 # BrickChain
 
-## 🚀 Overview
+## Overview
 Brief summary of what the DApp does and who it’s for. Especially the problem it solving
 
-## 🛠 Features
+## Features
 - ✅ Smart contract lending
 - ✅ Credit scoring with SBT
 - ✅ Token-gated content access
 
-## 📁 Project Structure
+## Project Structure
 - `contracts/`: Smart contracts (written in Solidity via Remix)
 - `frontend/`: DApp code (React, Next.js, or React Native)
 - `assets/`: Screenshots, mockups, etc.
 - `videos/`: Demo screen recordings
 - `deployment/`: Script files and deployed addresses
 
-## 🧠 Tech Stack
+## Tech Stack
 - Solidity + Hardhat (or Remix)
 - React / Next.js / React Native
 - IPFS / Filecoin (optional)
 - MetaMask / WalletConnect
 - Ethers.js / Wagmi / RainbowKit
 
-## 💻 How to Run Locally
+## How to Run Locally
 1. Clone the repo  
 2. `cd frontend && npm install`  
 3. `npm run dev`
 
-## 🔐 Contracts
+## Contracts
 | Contract | Address | Network |
 |----------|---------|---------|
 | ExampleLoan.sol | 0x... | Sonic Testnet |
@@ -38,7 +38,7 @@ Brief summary of what the DApp does and who it’s for. Especially the problem i
 ## 🎥 Demo Video
 [Watch here](./videos/demo.mp4)
 
-## 🧑‍💻 Authors
+## Authors
 - Jane Doe (Frontend)
 - John Smith (Solidity)
 
