@@ -1,0 +1,120 @@
+# BrickChain Platform
+
+## Overview
+BrickChain is a decentralized real estate investment platform that democratizes property ownership through blockchain technology. By enabling fractional ownership and tokenization of real estate assets, we make property investment accessible to everyone while ensuring transparency, security, and liquidity.
+
+## Key Features
+- ✅ Property Tokenization & Fractional Ownership
+- ✅ Smart Contract-based Transactions
+- ✅ KYC/AML Compliance Integration
+- ✅ IPFS-based Document & Image Storage
+- ✅ Web3 Wallet Integration (MetaMask/WalletConnect)
+- ✅ Real-time Investment Dashboard
+- ✅ Secondary Market for Property Tokens
+
+## Project Structure
+```
+brickearn/               # Main Next.js frontend application
+├── src/
+│   ├── app/            # Next.js 13 app router pages
+│   ├── components/     # Reusable React components
+│   ├── contexts/       # React context providers
+│   ├── lib/           # Utility functions and APIs
+│   └── types/         # TypeScript type definitions
+├── smart-contracts/    # Solidity smart contracts
+│   ├── contracts/     # Main contract files
+│   ├── scripts/       # Deployment scripts
+│   └── test/          # Contract test files
+└── public/            # Static assets and images
+```
+
+## Tech Stack
+- **Frontend**: Next.js 13+, TypeScript, Tailwind CSS
+- **Blockchain**: Solidity, Hardhat, Ethers.js
+- **Storage**: IPFS (Pinata), Supabase
+- **Authentication**: Web3 wallets (MetaMask/WalletConnect)
+- **Testing**: Jest, Hardhat Test
+
+## Environment Setup
+Create a `.env.local` file with the following variables:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+NEXT_PUBLIC_PINATA_API_KEY=your_pinata_key
+NEXT_PUBLIC_PINATA_API_SECRET=your_pinata_secret
+```
+
+## Local Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/brickchain.git
+cd brickchain
+```
+
+2. Install dependencies:
+```bash
+# Install frontend dependencies
+cd brickearn
+npm install
+
+# Install smart contract dependencies
+cd smart-contracts
+npm install
+```
+
+3. Start the development servers:
+```bash
+# Start frontend (from brickearn directory)
+npm run dev
+
+# In another terminal, start local blockchain
+cd smart-contracts
+npx hardhat node
+```
+
+4. Deploy smart contracts:
+```bash
+cd smart-contracts
+npx hardhat run scripts/deploy.ts --network localhost
+```
+
+## Contract Addresses (Testnet)
+
+| Contract | Address | Network |
+|----------|---------|---------|
+| PropertyRegistry | 0x... | Sepolia |
+| FractionalOwnership | 0x... | Sepolia |
+| AssetMarketplace | 0x... | Sepolia |
+| BCTToken | 0x... | Sepolia |
+
+## Testing
+
+```bash
+# Run frontend tests
+npm run test
+
+# Run smart contract tests
+cd smart-contracts
+npx hardhat test
+```
+
+## Screenshots
+![Marketplace](./public/screenshots/marketplace.png)
+![Property Details](./public/screenshots/property-details.png)
+![Investment Dashboard](./public/screenshots/dashboard.png)
+
+## Contributing
+Please read our [Contributing Guidelines](CONTRIBUTING.md) before making a pull request.
+
+## Security
+This project is in development. While we follow security best practices, please use caution when dealing with real assets.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+For support:
+- Join our [Discord community](https://discord.gg/brickchain)
+- Open a GitHub issue
+- Email: support@brickchain.io

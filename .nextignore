@@ -1,0 +1,7 @@
+../smart-contracts/
+../smart-contracts-backup/
+node_modules/
+.next/
+dist/
+test/
+scripts/
